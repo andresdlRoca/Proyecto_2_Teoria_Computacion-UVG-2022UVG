@@ -36,3 +36,9 @@ multiplicacion = lambda a: lambda b: lambda f: lambda x: a(b(f))(x)
 
 #potencia(a,b,f,x)
 potencia = lambda a: lambda b: b(a)
+
+#Alpha
+alpha = lambda x: x+1
+
+#Beta
+beta = lambda x: 2*x
