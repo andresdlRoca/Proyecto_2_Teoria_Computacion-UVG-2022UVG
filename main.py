@@ -19,9 +19,9 @@
 #Referencia 2: https://www.glc.us.es/~jalonso/exercitium/numeros-de-church/#:~:text=Los%20n%C3%BAmeros%20naturales%20pueden%20definirse,y%20devuelve%20n%20veces%20f.
 
 #Conversion de funcion lambda/numeros de Church
-sumar1 = lambda x: x + 1 #Se suma 1 al argumento que se le de (funciona como "sucesor")
 #Convierte las funciones Lambda a integer que se pueda visualizar en la CLI
-lambdaToint = lambda n: n(sumar1)(0) 
+#Se suma 1 al argumento x que se le de (funciona como "sucesor")
+lambdaToint = lambda n: n(lambda x: x + 1)(0) 
 
 #Funciones de numeros de Church/Lambda: (a-e)
 #f = funcion para aplicar
@@ -61,8 +61,8 @@ alpha = lambda x: suma(x)(uno)
 #beta(x) = 2*x
 beta = lambda x: multiplicacion(dos)(x)
 
-#Ejemplos de uso
 
+#Ejemplos de uso
 #a.
 print("* 2 2:")
 print(lambdaToint(multiplicacion(dos)(dos))) # * 2 2
@@ -74,6 +74,7 @@ print(" ")
 #c. 
 print("^ + 1 3 2:")
 print(lambdaToint(potencia(suma(uno)(tres))(dos))) # ^ + 1 3 2
+print(" ")
 #d.
 print("+ alpha 2 beta 3")
 print(lambdaToint(suma(alpha(dos))(beta(tres)))) # + alpha 2 beta 3
