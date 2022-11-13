@@ -19,7 +19,7 @@
 #Referencia 2: https://www.glc.us.es/~jalonso/exercitium/numeros-de-church/#:~:text=Los%20n%C3%BAmeros%20naturales%20pueden%20definirse,y%20devuelve%20n%20veces%20f.
 
 #Conversion de funcion lambda/numeros de Church
-sumar1 = lambda x: x + 1 #Se suma 1 al argumento que se le de
+sumar1 = lambda x: x + 1 #Se suma 1 al argumento que se le de (funciona como "sucesor")
 #Convierte las funciones Lambda a integer que se pueda visualizar en la CLI
 lambdaToint = lambda n: n(sumar1)(0) 
 
@@ -55,16 +55,25 @@ multiplicacion = lambda a: lambda b: lambda f: lambda x: a(b(f))(x)
 #potencia(a,b,f,x)
 potencia = lambda a: lambda b: b(a)
 
-#Alpha
-alpha = lambda x: x+1
+#alpha(x+1) = x + 1
+alpha = lambda x: suma(x)(uno)
 
-#Beta
-beta = lambda x: 2*x
+#beta(x) = 2*x
+beta = lambda x: multiplicacion(dos)(x)
 
 #Ejemplos de uso
 
 #a.
-
-
+print("* 2 2:")
+print(lambdaToint(multiplicacion(dos)(dos))) # * 2 2
+print(" ")
 #b.
+print("+ + 1 2 sucesor 2 -> + + 1 2 3:")
 print(lambdaToint(suma(suma(uno)(dos))(sucesor(dos)))) # + + 1 2 sucesor 2 -> + + 1 2 3
+print(" ")
+#c. 
+print("^ + 1 3 2:")
+print(lambdaToint(potencia(suma(uno)(tres))(dos))) # ^ + 1 3 2
+#d.
+print("+ alpha 2 beta 3")
+print(lambdaToint(suma(alpha(dos))(beta(tres)))) # + alpha 2 beta 3
