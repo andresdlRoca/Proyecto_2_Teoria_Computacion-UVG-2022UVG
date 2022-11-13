@@ -40,7 +40,7 @@ dos = lambda f: lambda x: f(f(x))
 tres = lambda f: lambda x: f(f(f(x)))
 
 #Funciones de operacion sobre numeros de Church/Lambda (f-h)
-# n = Numero de Church
+# n = Numero de Church sobre el cual se opera
 # a & b = Argumentos sobre los cuales se opera
 
 #sucesor(n,f,x)
