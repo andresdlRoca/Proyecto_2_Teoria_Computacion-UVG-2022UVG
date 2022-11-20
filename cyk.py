@@ -14,12 +14,9 @@ Rules = {
 def cykParse(w):
     wordAmount = len(w)
      
-    
     Table = [[set([]) for wordPos in range(wordAmount)] for i in range(wordAmount)] # Create the table
- 
     
     for wordPos in range(0, wordAmount): #For loop, for each word in the original sentence
-        print("")
         
         #Checker for terminals
         for lhs, rule in Rules.items(): #lhs is The left part of the rule and rule is the right part of the rule
