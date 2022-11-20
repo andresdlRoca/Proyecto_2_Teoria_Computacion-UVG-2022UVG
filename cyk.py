@@ -1,3 +1,4 @@
+from parse import treeParse
 Rules = {
         "S": [["NP", "VP"]],
         "VP": [["VP", "PP"], ["V", "NP"], ["cooks"], ["drinks"], ["eats"], ["cuts"]],
@@ -44,6 +45,7 @@ def cykParse(w):
  
     if len(Table[0][wordAmount-1]) != 0: #Checks if the last cell in the first row is empty or not
         print("True")
+        treeParse(w).draw()
     else:
         print("False")
      
