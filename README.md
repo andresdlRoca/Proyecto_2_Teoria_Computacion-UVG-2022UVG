@@ -13,7 +13,9 @@ Correr archivo de Python en un IDE o en una linea de comandos
 ## Authors
 :bust_in_silhouette: Andrès de la Roca  
 - <a href="https://github.com/andresdlRoca">Github</a>  
+
 :bust_in_silhouette: Yong Bum Park  
 - <a href="https://github.com/Yong-Park">Github</a>  
+
 :bust_in_silhouette: Jun Woo Lee  
 - <a href="https://github.com/jwlh00">Github</a>  
