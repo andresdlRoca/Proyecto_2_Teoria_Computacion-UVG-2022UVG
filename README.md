@@ -10,7 +10,7 @@ de programacion Python, en concreto se trabaja con los temas:
 ```
 Correr archivo de Python en un IDE o en una linea de comandos
 ```
-## Authors
+## Autores
 :bust_in_silhouette: Andrès de la Roca  
 - <a href = "https://www.linkedin.com/in/andr%C3%A8s-de-la-roca-pineda-10a40319b/">Linkedin</a>
 - <a href="https://github.com/andresdlRoca">Github</a>  
