@@ -1,4 +1,4 @@
-# Proyecto_2_Teoria_Computacion-UVG-2022UVG  
+# Proyecto 2 Teoria de la Computacion UVG 2022  
 ## Teoria de la Computacion  
 Programa con el que se propone una adaptacion de diferentes temas de la teoria de la computacion hacia el lenguaje
 de programacion Python, en concreto se trabaja con los temas:  
