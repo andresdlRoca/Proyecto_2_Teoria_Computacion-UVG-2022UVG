@@ -10,10 +10,6 @@
 #
 ######################################
 
-# Gramaticas
-
-
-
 # Funciones Lambda
 #Referencia 1: https://users.monash.edu/~lloyd/tildeFP/Lambda/Examples/const-int/
 #Referencia 2: https://www.glc.us.es/~jalonso/exercitium/numeros-de-church/#:~:text=Los%20n%C3%BAmeros%20naturales%20pueden%20definirse,y%20devuelve%20n%20veces%20f.
